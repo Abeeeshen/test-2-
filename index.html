@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archive</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f7f7f7; /* light background */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a7c2c; /* earthy green */
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .video-container {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff; /* white background for video sections */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .video-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (max-width: 600px) {
+            iframe {
+            
